@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AromaKu — Toko Parfum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">AromaKu</div>
+    <nav>
+      <a href="#katalog">Katalog</a>
+      <button id="btn-cart" class="cart-btn" type="button">
+        Keranjang (<span id="cart-count">0</span>)
+      </button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Temukan Karakter Aromamu</h1>
+    <p>Eau de Parfum racikan pilihan dengan ketahanan hingga 8–10 jam.</p>
+    <a href="#katalog" class="cta-btn">Lihat Katalog</a>
+  </section>
+
+  <main id="katalog" class="catalog-section">
+    <h2>Katalog Parfum</h2>
+    <div class="filters">
+      <button class="filter-btn active" data-category="all" type="button">Semua</button>
+      <button class="filter-btn" data-category="floral" type="button">Floral</button>
+      <button class="filter-btn" data-category="woody" type="button">Woody</button>
+      <button class="filter-btn" data-category="fresh" type="button">Fresh</button>
+    </div>
+    <div id="product-list" class="product-grid"></div>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <div class="cart-header">
+      <h3>Keranjang Belanja</h3>
+      <button id="close-cart" type="button">✕</button>
+    </div>
+    <ul id="cart-items" class="cart-items"></ul>
+    <div class="cart-footer">
+      <p>Total: <strong id="cart-total">Rp0</strong></p>
+      <button id="checkout-wa" class="wa-btn" type="button">Pesan via WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
